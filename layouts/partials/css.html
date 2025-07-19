@@ -1,4 +1,4 @@
-{{ with resources.Get "css/main.css" }}
+{{ with resources.Get "css/style.css" }}
   {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
   {{ with . | css.TailwindCSS $opts }}
     {{ if hugo.IsDevelopment }}
